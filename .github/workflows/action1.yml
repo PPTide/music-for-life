@@ -10,7 +10,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }} 
           known_hosts: 'just-a-placeholder-so-we-dont-get-errors'
       - name: debug
-        run: ls -a ../..
+        run: ls -a
       - name: Adding Known Hosts
         run: ssh-keyscan -H 85.214.24.197 >> ~/.ssh/known_hosts
       - name: Deploy with rsync
