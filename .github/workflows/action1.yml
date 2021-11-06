@@ -12,4 +12,4 @@ jobs:
       - name: Adding Known Hosts
         run: ssh-keyscan -H 85.214.24.197 >> ~/.ssh/known_hosts
       - name: Deploy with rsync
-        run: rsync -v -avz ../frontend/ root@85.214.24.197:/var/www/html/
+        run: rsync -v -avz ./frontend/ root@85.214.24.197:/var/www/html/
